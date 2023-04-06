@@ -1,0 +1,68 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --numCelle: 10;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px;
+  color: white;
+  background-color: #0680ff;
+}
+
+#difficulty{
+  padding: 5px 10px;
+}
+
+#play{
+  padding: 5px 10px;
+  margin: 0 20px;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+  padding: 10px;
+  background-color: darkorange;
+}
+
+.grill{
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 800px;
+}
+
+.item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / var(--numCelle));
+  height: calc(100% / var(--numCelle));
+  color: white;
+  border: 1px solid white;
+}
+
+.clicked{
+  background-color: #0680ff;
+}
+
+.clicked-bomb{
+  background-color: white;
+}
